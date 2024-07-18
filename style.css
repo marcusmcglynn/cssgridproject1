@@ -1,0 +1,55 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+}
+
+body {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: 200px 300px 300px 100px;
+    grid-template-areas: 
+    'w w w w'
+    'm m m a'
+    'm m m s'
+    'f f f f'
+    ;
+}
+
+.welcome {
+    grid-area: w;
+    text-align: center;
+    color: white;
+    font-size: 30px;
+}
+
+header {
+    grid-area: w;
+    background-color: #2a9d8f;
+}
+
+main {
+    grid-area: m;
+    background-color: #e9c46a;
+}
+
+aside {
+    grid-area: a;
+    background-color: #f4a261;
+}
+
+section {
+    grid-area: s;
+    background-color: #e76f51;
+}
+
+footer {
+    grid-area: f;
+    background-color: #264653;
+}
+
+.navbar {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+}
